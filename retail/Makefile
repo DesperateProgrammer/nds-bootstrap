@@ -166,7 +166,7 @@ bootloader: $(DATA) cardengine_arm7 cardengine_arm9 cardengine_arm9_8kb cardengi
 	@$(MAKE) -C bootloader
 
 #---------------------------------------------------------------------------------		
-bootloaderi: $(DATA) cardenginei_arm7 cardenginei_arm7_alt cardenginei_arm7_sdk5 cardenginei_arm7_cheat cardenginei_arm9_igm cardenginei_arm9 cardenginei_arm9_cached cardenginei_arm9_cached_end cardenginei_arm9_dldi cardenginei_arm9_sdk5 cardenginei_arm9_twlsdk cardenginei_arm9_sdk5_dldi cardenginei_arm9_twlsdk_dldi cardenginei_arm9_romInRam
+bootloaderi: $(DATA) cardenginei_arm7 cardenginei_arm7_alt cardenginei_arm7_sdk5 cardenginei_arm7_cheat cardenginei_arm9_igm cardenginei_arm9 cardenginei_arm9_cached cardenginei_arm9_cached_end cardenginei_arm9_dldi cardenginei_arm9_sdk5 cardenginei_arm9_twlsdk cardenginei_arm9_sdk5_dldi cardenginei_arm9_twlsdk_dldi cardenginei_arm9_romInRam arm9_fileio_pic
 	@$(MAKE) -C bootloaderi
 
 #---------------------------------------------------------------------------------		
@@ -240,6 +240,10 @@ cardenginei_arm9_twlsdk_dldi: $(DATA)
 #---------------------------------------------------------------------------------		
 cardenginei_arm9_romInRam: $(DATA)
 	@$(MAKE) -C cardenginei/arm9_romInRam
+  
+#---------------------------------------------------------------------------------		
+arm9_fileio_pic: $(DATA)
+	@$(MAKE) -C arm9_fileio_pic
 
 #---------------------------------------------------------------------------------
 #$(BUILD):
